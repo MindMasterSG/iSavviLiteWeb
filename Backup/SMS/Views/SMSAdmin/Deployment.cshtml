@@ -1,0 +1,67 @@
+﻿@model IEnumerable<SMSEntities.SMSDBEntities.Deployement>
+@{
+    ViewBag.Title = "Deployments List";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 20, canPage: true);
+}
+<script language="javascript" type="text/javascript">
+    function getConfirm() {
+        if (window.confirm('Are you sure!, you want to delete?'))
+            return true;
+        else
+            return false;
+    }
+    function frmSubmit() {
+        document.forms[0].submit();
+    }
+</script>
+
+<div class="Transactions_cont">
+  <div class="Displaying_cont_txt" >Deployments</div>
+  @using (Html.BeginForm())
+  { 
+   <div class="transactions_right_cont">
+                        <div class="search_txt">
+                            search:
+                        </div>
+                        <div class="wat_box">
+                            <input name="txtSearchString" id="txtSearchString" type="text" class="wat_box_input" onfocus="if(this.value == '') this.value = ''"
+                                onblur="if(this.value == '') this.value = ' '" value=" " /></div>
+                        <div class="search_img" onclick="frmSubmit();">
+                        </div>
+                    </div>
+  }
+</div>
+    <p>@Html.ActionLink("Add new deployment", "DeploymentAdd")</p>
+     @grid.GetHtml(
+    fillEmptyRows: true,
+         alternatingRowStyle: "transactions_bg_cont_2",
+              headerStyle: "transactions_bg_cont",
+              rowStyle: "transactions_bg_cont",
+         footerStyle: "total_right_cont_txt",
+    mode: WebGridPagerModes.All,
+    //firstText: "<< First",
+    //previousText: "< Prev",
+    //nextText: "Next >",
+    //lastText: "Last >>",
+    numericLinksCount: 5,
+    firstText: "<<",
+    lastText: ">>",
+    columns: new [] {
+        
+        grid.Column("DeploymentName", "Deployment", canSort: true, style:"normaltext"),
+        grid.Column("ClientName", "Client Name", canSort: true, style:"normaltext"),
+        grid.Column("Address", "Address", canSort: true, style:"text600"),
+        grid.Column("", 
+                    //header: "",
+                    format: @<text>
+                                @Html.ActionLink("Edit", "DeploymentEdit", new { id = item.DeploymentId })
+                                |
+                                @Html.ActionLink("Delete", "DeleteDeployment", new { id = item.DeploymentId }, new { onclick = "return getConfirm();" })
+                            </text>
+        )
+})
+<div class="total_main_bg_cont">
+             <div class="total_left_cont_txt">Total Deployments found:<strong> @grid.TotalRowCount.ToString()</strong></div>
+             </div>
+       

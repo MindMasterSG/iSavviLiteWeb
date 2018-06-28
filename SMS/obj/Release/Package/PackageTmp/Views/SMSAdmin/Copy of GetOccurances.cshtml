@@ -1,0 +1,132 @@
+﻿@model IEnumerable<SMSEntities.SMSDBEntities.Occurrance>
+@{
+    ViewBag.Title = "GetOccurances";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function getConfirm() {
+        if (window.confirm('Are you sure!, you want to delete?'))
+            return true;
+        else
+            return false;
+    }
+    function frmSubmit() {
+        document.forms[0].submit();
+    }
+</script>
+<h2>Occurances</h2>
+@using (Html.BeginForm())
+{
+    int i = 2;
+    int b = 2;
+<p>@Html.ActionLink("Add new occurance", "AddOccurances", "SMSAdmin")</p>
+
+          <div class="transactions_bg_cont">
+             <div class="created_cont_txt">Serial No</div>
+             <div class="visiter_cont_txt">Date/Time</div>
+             <div class="transaction_type_cont_txt">Heading</div>
+             <div class="company_cont_txt">Notes</div>
+             </div>
+foreach (var item in Model)
+{
+    int reminder;
+    int quotation = Math.DivRem(i, b, out reminder);
+    if (reminder == 0)
+    {
+        if (!@item.important)
+        {
+                <div class="transactions_bg_cont">
+             <div class="december_cont_txt">
+             <div class="december_txt">@item.occuranceid</div></div>
+             <div class="channareddygari_cont_txt">
+             <div class="channareddygari_txt">@item.reportdate </div></div>
+             <div class="check_out_cont_txt">
+             <div class="check_out_txt">@item.heading </div></div>
+             <div class="katong_cont_txt">
+             <div class="katong_txt">@item.notes</div></div>
+             <div class="button_cont">
+             <div class="edit_button">@Html.ActionLink("Edit", "EditOccurances", new { ID = item.occuranceid })</div>
+             <div class="delete_button">@Html.ActionLink("Delete", "RemoveOccurances", new { ID = item.occuranceid })</div>
+             <div class="show_button"><a href="#"></a></div></div></div>
+        }
+        else
+        {
+            
+             <div class="transactions_bg_cont_2">
+             <div class="december_cont_txt">
+             <div class="december_txt">@item.occuranceid</div></div>
+             <div class="channareddygari_cont_txt">
+             <div class="channareddygari_txt">@item.reportdate  </div></div>
+             <div class="check_out_cont_txt">
+             <div class="check_out_txt">@item.heading</div></div>
+             <div class="katong_cont_txt">
+             <div class="katong_txt">@item.notes</div></div>
+             <div class="button_cont">
+             <div class="edit_button">@Html.ActionLink("Edit", "EditOccurances", new { ID = item.occuranceid })</div>
+             <div class="delete_button">@Html.ActionLink("Delete", "RemoveOccurances", new { ID = item.occuranceid })</div>
+             <div class="show_button"><a href="#"></a></div>
+             </div>
+             </div>
+
+        }
+
+    }
+    else
+    {
+        if (!@item.important)
+        {
+            <div class="transactions_bg_cont">
+             <div class="december_cont_txt">
+             <div class="december_txt">@item.occuranceid</div></div>
+             <div class="channareddygari_cont_txt">
+             <div class="channareddygari_txt">@item.reportdate </div></div>
+             <div class="check_out_cont_txt">
+             <div class="check_out_txt">@item.heading </div></div>
+             <div class="katong_cont_txt">
+             <div class="katong_txt">@item.notes</div></div>
+             <div class="button_cont">
+             <div class="edit_button">@Html.ActionLink("Edit", "EditOccurances", new { ID = item.occuranceid })</div>
+             <div class="delete_button">@Html.ActionLink("Delete", "RemoveOccurances", new { ID = item.occuranceid })</div>
+             <div class="show_button"><a href="#"></a></div></div></div>
+        }
+        else
+        {
+             <div class="transactions_bg_cont_2">
+             <div class="december_cont_txt">
+             <div class="december_txt">@item.occuranceid</div></div>
+             <div class="channareddygari_cont_txt">
+             <div class="channareddygari_txt">@item.reportdate  </div></div>
+             <div class="check_out_cont_txt">
+             <div class="check_out_txt">@item.heading</div></div>
+             <div class="katong_cont_txt">
+             <div class="katong_txt">@item.notes</div></div>
+             <div class="button_cont">
+             <div class="edit_button">@Html.ActionLink("Edit", "EditOccurances", new { ID = item.occuranceid })</div>
+             <div class="delete_button">@Html.ActionLink("Delete", "RemoveOccurances", new { ID = item.occuranceid })</div>
+             <div class="show_button"><a href="#"></a></div>
+             </div>
+             </div>
+        }
+            
+    }
+    i++;
+}
+             <div class="total_main_bg_cont">
+             <div class="total_left_cont_txt">Total Occurances found:<strong>@i.ToString()</strong></div>
+             
+            @* <div class="total_right_cont_txt">
+             <div class="no_1_img"><a href="#" style="background-position:0 -17px;"></a></div>
+             <div class="no_2_img"><a href="#"></a></div>
+             <div class="no_3_img"><a href="#"></a></div>
+             <div class="no_4_img"><a href="#"></a></div>
+             <div class="no_5_img"><a href="#"></a></div>
+             
+             <div class="mt_img">
+             <input name="city" type="text" class="no_6_cont" /></div><span style=" float:left; margin:0px 5px 0 5px;">of</span>
+             <div class="no_50_img"><a href="#"></a></div>
+             <div class="botton_arow"><a href="#"></a></div>
+             </div>*@
+             </div>
+
+}
+

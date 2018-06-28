@@ -1,0 +1,71 @@
+﻿@model IEnumerable<SMSEntities.SMSDBEntities.Vehicles>
+@{
+    ViewBag.Title = "GetVehicles";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 20, canPage: true);    
+}
+<script language="javascript" type="text/javascript">
+    function getConfirm() {
+        if (window.confirm('Are you sure!, you want to delete?'))
+            return true;
+        else
+            return false;
+    }
+    function frmSubmit() {
+        document.forms[0].submit();
+    }
+</script>
+
+<div class="Transactions_cont">
+  <div class="Displaying_cont_txt" >Vehicles</div>
+  @using (Html.BeginForm())
+  { 
+   <div class="transactions_right_cont">
+                        <div class="search_txt">
+                            search:
+                        </div>
+                        <div class="wat_box">
+                            <input name="txtSearchString" id="txtSearchString" type="text" class="wat_box_input" onfocus="if(this.value == '') this.value = ''"
+                                onblur="if(this.value == '') this.value = ' '" value=" " /></div>
+                        <div class="search_img" onclick="frmSubmit();">
+                        </div>
+                    </div>
+  }
+</div>
+<p>@Html.ActionLink("Add new vehicle", "AddVehicle")</p>
+    @grid.GetHtml(
+    fillEmptyRows: true,
+         alternatingRowStyle: "transactions_bg_cont_2",
+              headerStyle: "transactions_bg_cont",
+              rowStyle: "transactions_bg_cont",
+         footerStyle: "total_right_cont_txt",
+    mode: WebGridPagerModes.All,
+    //firstText: "<< First",
+    //previousText: "< Prev",
+    //nextText: "Next >",
+    //lastText: "Last >>",
+    numericLinksCount: 5,
+    firstText: "<<",
+    lastText: ">>",
+    columns: new [] {
+        
+        //grid.Column("identificationunit", "Iden. Unit", canSort: true, style:"normaltext"),
+        grid.Column("platenumber","Vehicle Plate #", canSort: true, style: "normaltext"),
+        grid.Column("vehicletype","Vehicle Type", canSort: true, style: "normaltext"),
+        grid.Column("LocationName","Location", canSort: true, style: "normaltext"),
+        grid.Column("contractor","Contractor", canSort: true, style: "normaltext"),
+        grid.Column("authpersonname","Auth. Person", canSort: true, style: "normaltext"),
+        grid.Column("description","Description", canSort: true, style: "longtext"),
+        grid.Column("",
+                    header: "",
+                    format: @<text>
+                                @Html.ActionLink("Edit", "EditVehicle", new { id = item.vehicleid })
+                                |
+                                @Html.ActionLink("Delete", "RemoveVehicle", new { id = item.vehicleid }, new { onclick = "return getConfirm();" })
+                            </text>
+        )
+})
+<div class="total_main_bg_cont">
+             <div class="total_left_cont_txt">Total Vehicles found:<strong> @grid.TotalRowCount.ToString()</strong></div>
+             </div>
+

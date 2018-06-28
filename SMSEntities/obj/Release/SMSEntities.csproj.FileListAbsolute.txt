@@ -1,0 +1,15 @@
+D:\Projects\sms\SMS\SMSEntities\bin\Release\SMSEntities.dll
+D:\Projects\sms\SMS\SMSEntities\bin\Release\SMSEntities.pdb
+D:\Projects\sms\SMS\SMSEntities\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS\SMSEntities\obj\Release\SMSEntities.dll
+D:\Projects\sms\SMS\SMSEntities\obj\Release\SMSEntities.pdb
+E:\Ravi_Projects\SMS\SMSEntities\bin\Release\SMSEntities.dll
+E:\Ravi_Projects\SMS\SMSEntities\bin\Release\SMSEntities.pdb
+E:\Ravi_Projects\SMS\SMSEntities\obj\Release\SMSEntities.dll
+E:\Ravi_Projects\SMS\SMSEntities\obj\Release\SMSEntities.pdb
+E:\Ravi_Projects\SMS\SMSEntities\obj\Release\SMSEntities.csprojResolveAssemblyReference.cache
+E:\Ravi_Projects\iSavviLite\iSavviLite\SMSEntities\bin\Release\SMSEntities.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite\SMSEntities\bin\Release\SMSEntities.pdb
+E:\Ravi_Projects\iSavviLite\iSavviLite\SMSEntities\obj\Release\SMSEntities.csprojResolveAssemblyReference.cache
+E:\Ravi_Projects\iSavviLite\iSavviLite\SMSEntities\obj\Release\SMSEntities.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite\SMSEntities\obj\Release\SMSEntities.pdb

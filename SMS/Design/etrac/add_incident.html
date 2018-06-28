@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ADD Incident</title>
+
+<link href="css/etrac.css" rel="stylesheet" type="text/css" />
+
+</head >
+
+<body >
+
+      <div class="header_part" style="width:100%;">
+  <div class="header_wrapper">
+            <div class="header_main_mt_cont">
+            
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" border="0" /></a></div>
+            
+            <div class="top_menu">Welcome :  
+                     <li><a href="gallery.html" class="footer_Highlight">Katong_guard </a></li>
+					 <li> | </li> 
+					 <li><a href="contactus.html">Logout</a></li></div>
+        </div>
+                     
+                     
+                     <div class="menu_cont">
+                     <div class="check_in_button"><a href="login.html"></a></div>
+                     <div class="vehicles_button"><a href="transactions.html"></a></div>
+                     <div class="occurrences_button"><a href="#"></a></div>
+                     <div class="incidents_button"><a href="#"></a></div>
+                     <div class="event_button"><a href="#"></a></div>
+                      <div class="lost_button"><a href="#"></a></div></div>
+                      
+                      
+                      <div class="body_main_mt_cont">
+                      <div class="vehicle_cont">
+                      <div class="vehicle_txt" style="text-transform:uppercase;">ADD NEW INCIDENT <br />
+                      </div>
+                      </div></div>
+                      <div></div>
+                      
+                      <div class="Identification_cont">
+                      <div class="Identification_left_cont">
+                      <div class="contact_left_cont">
+             <form id="eform" name="eform" method="post" action="quick_contact.php" onSubmit="return formValid();">
+             <table width="788" class="subject">
+             <tbody>
+              <tr>
+             <td width="172" style="color:#FFFFFF;">Date of report : <span id="req">*</span></td>
+             <td width="604"><input  name="txtName2" style="width: 330px; height:25px; float:left; margin-left:60px;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" />
+               </r></td>
+              </tr>
+              <tr>
+             <td style=" padding-top:10px; color:#FFFFFF;"> Nature of Incident :<span id="req"> *</span></td><td>
+               <table width="200" border="0" style="padding-top:10px;">
+                 <tr>
+                   <td style="padding-right:px; margin-left:15px;"><img src="images/car.jpg" /></td>
+                   <td style="padding-right:10px; padding-left:10px;"><img src="images/gun.jpg" /></td>
+                   <td style="padding-right:10px;"><img src="images/fire.jpg" /></td>
+                   <td style="padding-right:0px;"><img src="images/medical.jpg" /></td>
+                   <td style="float:left; margin-left:20px;"><img src="images/mis.jpg" /></td>
+                   <td style="padding-right:10px;"><img src="images/police.jpg" /></td>
+                 </tr>
+                 <tr>
+                   <td style="text-align:left; padding-top:10px; padding-left:15px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">Car</span></td>
+                   <td style="text-align:left; padding-top:10px; padding-left:25px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">Gun</span></td>
+                   <td style="text-align:left; padding-top:10px; padding-left:15px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">Fire</span></td>
+                   <td style="text-align:left; padding-top:10px; padding-left:5px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">Medical</span></td>
+                   <td style="text-align:left; padding-top:10px; padding-left:5px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">Miscellanoeust</span></td>
+                   <td style="text-align:left; padding-top:10px; padding-left:15px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">Police</span></td>
+                 </tr>
+               </table>
+               </r></td></tr>
+              <tr>
+             <td style=" padding-top:10px; color:#FFFFFF;">Date & Time of Incident : <span id="req">*</span></td><td><table width="160" border="0">
+               <tr>
+                 <td><select style="width: 90px; font-size: 12px; margin-bottom:10px; float:left; margin-left:-165px; margin-top:10px; " name="qselection3" id="qselection3" class="">
+                   <option selected="selected" value="">Januaryt</option>
+                   <option value="1">Febravary</option>
+                   <option value="2">March</option>
+                   <option value="3">April</option>
+                   <option value="4">May</option>
+                   <option value="5">June</option>
+                   <option value="6">July</option>
+                   <option value="7">August</option>
+                   <option value="8">September</option>
+                   <option value="9"> Octoher ...</option>
+                 </select></td>
+                 <td><select style="width: 50px; font-size: 12px; margin-bottom:10px; float:left; margin-left:-70px; margin-top:10px; " name="qselection4" id="qselection4" class="">
+                   <option selected="selected" value="">01</option>
+                   <option value="1">02</option>
+                   <option value="2">03</option>
+                   <option value="3">04</option>
+                   <option value="4">05</option>
+                   <option value="5">06</option>
+                   <option value="6">07</option>
+                   <option value="7">08</option>
+                   <option value="8">09</option>
+                   <option value="9"> 10</option>
+                 </select></td>
+                 <td><select style="width:60px; font-size: 12px; margin-bottom:10px; float:left; margin-left:-17px; margin-top:10px; " name="qselection" id="qselection" class="">
+                        <option selected="selected" value="">01</option>
+                   <option value="1">2002</option>
+                   <option value="2">03</option>
+                   <option value="3">04</option>
+                   <option value="4">05</option>
+                   <option value="5">06</option>
+                   <option value="6">07</option>
+                   <option value="7">08</option>
+                   <option value="8">09</option>
+                   <option value="9"> 10</option>
+                     </select></td>
+                 <td><select style="width: 50px; font-size: 12px; margin-bottom:10px; float:left; margin-left:7px; margin-top:10px; " name="qselection2" id="qselection2" class="">
+                  <option selected="selected" value="">01</option>
+                   <option value="1">02</option>
+                   <option value="2">03</option>
+                   <option value="3">04</option>
+                   <option value="4">05</option>
+                   <option value="5">06</option>
+                   <option value="6">07</option>
+                   <option value="7">08</option>
+                   <option value="8">09</option>
+                   <option value="9"> 10</option>
+                 </select></td>
+                 <td><select style="width: 50px; font-size: 12px; margin-bottom:10px; float:left; margin-left:10px; margin-top:10px; " name="qselection" id="qselection" class="">
+                        <option selected="selected" value="">01</option>
+                   <option value="1">02</option>
+                   <option value="2">03</option>
+                   <option value="3">04</option>
+                   <option value="4">05</option>
+                   <option value="5">06</option>
+                   <option value="6">07</option>
+                   <option value="7">08</option>
+                   <option value="8">09</option>
+                   <option value="9"> 10</option>
+                     </select></td>
+               </tr>
+             </table>
+               </r></td></tr>
+             <tr>
+             <td style=" padding-top:10px ; color:#FFFFFF;">Location :</span></td>
+             <td ><select style="width: 200px; font-size: 12px; margin-bottom:10px; float:left; margin-left:57px; margin-top:10px; " name="qselection" id="qselection" class="">
+                        <option selected="selected" value="">Select the type of question / comment</option>
+                        <option value="1">I have a question regarding Special Ad posting</option>
+                        <option value="2">I would like more information on business advertising</option>
+                        <option value="3">I have a question regarding My account</option>
+                        <option value="4">I want more information on Dealer Registration Process</option>
+                        <option value="5">I have a Technical question</option>
+                        <option value="6">I have a General question</option>
+                        <option value="7">I have a comment / suggestion</option>
+                        <option value="8">I would like to report a possible bug</option>
+                        <option value="9"> Other ...</option>
+                     </select>
+               </r></td>
+             </tr>
+            <tr>
+                <td style=" padding-top:0px; color:#FFFFFF;">Particulars Of Person : </td>
+            <td style="padding-top:0px; padding-left:10px;">
+              <textarea id="message" style="width:522px; float:left;margin-top:10px; margin-left:45px; background-color:;  border:solid 1px #3a535e; color:  #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" name="message" rows="6" cols="50"></textarea></td>
+            </tr>
+            
+            <tr><td style=" padding-top:0px; color:#FFFFFF;"> Breif Description :</td>
+              <td  style="padding-top:10px; padding-left:10px;"><input  name="txtName" style="width: 330px; height:25px; float:left; margin-left:45px;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onKeyPress="hideMsg(1)" type="text"></td>
+            </tr>
+            
+            
+            
+            <tr><td style=" padding-top:0px; color:#FFFFFF;"> Remarks & Action taken :</td>
+            <td  style="padding-top:0px; padding-left:10px;"><textarea id="message2" style="width:522px; float:left;margin-top:10px; margin-left:45px; background-color:;  border:solid 1px #3a535e; color:  #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" name="message2" rows="6" cols="50"></textarea></td></tr>
+            </tbody></table>
+           </form></div></div>
+                      
+                      </div>
+                      </tr>
+                      
+                    <div class="bottom_line"></div>
+                      
+                      <div class="coperight_cont_txt">Copyright 2012 © SpinnetAsia Pte. Ltd.</div ></div >
+                      
+        
+
+</body>
+</html>

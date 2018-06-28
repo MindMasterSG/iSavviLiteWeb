@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SMSEntities.SMSDBEntities.Visitors>
+@{
+    ViewBag.Title = "NewParticipants";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 20, canPage: true);    
+}
+<script language="javascript" type="text/javascript">
+    function getConfirm() {
+        if (window.confirm('Are you sure!, you want to delete?'))
+            return true;
+        else
+            return false;
+    }
+    function frmSubmit() {
+        document.forms[0].submit();
+    }
+</script>
+
+<div class="Transactions_cont">
+  <div class="Displaying_cont_txt" >New Participants</div>
+</div>
+<p><a href="@Url.Action("GetEventsMaster", "SMSAdmin")"><input type="button"  class="btnScan" value="Back" /></a></p>
+
+<p>@Html.ActionLink("Add New Participant", "AddNewParticipent")</p>
+@grid.GetHtml(
+    fillEmptyRows: true,
+         alternatingRowStyle: "transactions_bg_cont_2",
+              headerStyle: "transactions_bg_cont",
+              rowStyle: "transactions_bg_cont",
+         footerStyle: "total_right_cont_txt",
+    mode: WebGridPagerModes.All,
+    //firstText: "<< First",
+    //previousText: "< Prev",
+    //nextText: "Next >",
+    //lastText: "Last >>",
+    numericLinksCount: 5,
+    firstText: "<<",
+    lastText: ">>",
+    columns: new [] {
+        
+        grid.Column("NRIC", "NRIC", canSort: true, style:"normaltext"),
+        grid.Column("FirstName","First Name", canSort: true, style: "normaltext"),
+        grid.Column("LastName","Last Name", canSort: true, style: "normaltext"),
+       
+        grid.Column("", 
+                    header: "",
+                    format: @<text>
+                                @Html.ActionLink("Edit", "EditNewParticipent", new { id = item.VisitorId })
+                                |
+                                @Html.ActionLink("Delete", "RemoveNewParticipent", new { id = item.VisitorId }, new { onclick = "return getConfirm();" })
+                            </text>
+        )
+})
+<div class="total_main_bg_cont">
+             <div class="total_left_cont_txt">Total New Participants found:<strong> @grid.TotalRowCount.ToString()</strong></div>
+             </div>
+
+

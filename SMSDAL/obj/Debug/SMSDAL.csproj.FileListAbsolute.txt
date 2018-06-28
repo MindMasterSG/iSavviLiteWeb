@@ -1,0 +1,152 @@
+D:\asr\code\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+D:\asr\code\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\asr\code\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+D:\asr\code\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+D:\asr\code\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\asr\code\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+D:\asr\code\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+F:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+F:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+F:\MVCProjects\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+F:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+F:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+F:\MVCProjects\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCProjects\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+F:\MVCProjects\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+E:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+E:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+E:\MVCProjects\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+E:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+E:\MVCProjects\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+E:\MVCProjects\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\MVCProjects\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+E:\MVCProjects\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+D:\asr\code\Final\SMS14-01-13\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+E:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+E:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+E:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+E:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+E:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+E:\MVCProjects\Latest\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\MVCProjects\Latest\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+E:\MVCProjects\Latest\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+F:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+F:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+F:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+F:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+F:\MVCProjects\Latest\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+F:\MVCProjects\Latest\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCProjects\Latest\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+F:\MVCProjects\Latest\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\asr\code\Final\SMS\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+D:\asr\code\Final\SMS\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\asr\code\Final\SMS\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+D:\asr\code\Final\SMS\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\Final\SMS\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+D:\asr\code\Final\SMS\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+F:\MVCProjects\SMS07-02-13\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\asr\code\Final\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+D:\asr\code\Final\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\asr\code\Final\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+D:\asr\code\Final\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\Final\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+D:\asr\code\Final\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\obj\Debug\SMSDAL.csprojResolveAssemblyReference.cache
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+C:\MyPro\SMS13-02-13\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+C:\MyPro\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+C:\MyPro\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+C:\MyPro\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+C:\MyPro\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+C:\MyPro\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+C:\MyPro\SMS\SMSDAL\obj\Debug\SMSDAL.csprojResolveAssemblyReference.cache
+C:\MyPro\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+C:\MyPro\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+C:\MyPro\SMS 19-03-2013\SMSDAL\bin\Debug\SMSDAL.dll
+C:\MyPro\SMS 19-03-2013\SMSDAL\bin\Debug\SMSDAL.pdb
+C:\MyPro\SMS 19-03-2013\SMSDAL\bin\Debug\MySql.Data.dll
+C:\MyPro\SMS 19-03-2013\SMSDAL\bin\Debug\SMSEntities.dll
+C:\MyPro\SMS 19-03-2013\SMSDAL\bin\Debug\SMSEntities.pdb
+C:\MyPro\SMS 19-03-2013\SMSDAL\obj\Debug\SMSDAL.csprojResolveAssemblyReference.cache
+C:\MyPro\SMS 19-03-2013\SMSDAL\obj\Debug\SMSDAL.dll
+C:\MyPro\SMS 19-03-2013\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\bin\Debug\SMSDAL.dll
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\bin\Debug\MySql.Data.dll
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\bin\Debug\SMSEntities.dll
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\obj\Debug\SMSDAL.dll
+D:\Projects\sms\SMS 20-03-2013 with Occurances\SMS 19-03-2013\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\bin\Debug\SMSDAL.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\bin\Debug\MySql.Data.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\bin\Debug\SMSEntities.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\obj\Debug\SMSDAL.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\bin\Debug\SMSDAL.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\bin\Debug\MySql.Data.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\bin\Debug\SMSEntities.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\obj\Debug\SMSDAL.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013 - Client Demo 1\SMSDAL\obj\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+D:\Projects\sms\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+D:\Projects\sms\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+D:\Projects\sms\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+D:\Projects\sms\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS\SMSDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+D:\Projects\sms\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+E:\Ravi_Projects\SMS\SMSDAL\bin\Debug\SMSDAL.dll
+E:\Ravi_Projects\SMS\SMSDAL\bin\Debug\SMSDAL.pdb
+E:\Ravi_Projects\SMS\SMSDAL\bin\Debug\MySql.Data.dll
+E:\Ravi_Projects\SMS\SMSDAL\bin\Debug\SMSEntities.dll
+E:\Ravi_Projects\SMS\SMSDAL\bin\Debug\SMSEntities.pdb
+E:\Ravi_Projects\SMS\SMSDAL\obj\Debug\SMSDAL.csprojResolveAssemblyReference.cache
+E:\Ravi_Projects\SMS\SMSDAL\obj\Debug\SMSDAL.dll
+E:\Ravi_Projects\SMS\SMSDAL\obj\Debug\SMSDAL.pdb
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\bin\Debug\SMSDAL.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\bin\Debug\SMSDAL.pdb
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\bin\Debug\MySql.Data.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\bin\Debug\SMSEntities.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\bin\Debug\SMSEntities.pdb
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\obj\Debug\SMSDAL.csprojResolveAssemblyReference.cache
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\obj\Debug\SMSDAL.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSDAL\obj\Debug\SMSDAL.pdb

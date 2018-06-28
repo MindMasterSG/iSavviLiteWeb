@@ -1,0 +1,45 @@
+﻿@model SMS.Models.CompanyViewModel
+
+@{
+    ViewBag.Title = "EditCompany";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById('Deployments').selectedIndex == 0) {
+            alert("Please select Deployment");
+            return false;
+        }
+        if (document.getElementById("CompanyName").value == "") {
+            alert('Please enter the company name');
+            document.getElementById("CompanyName").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>Companies</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    <fieldset><div class="check_main_bg_cont">
+        <h3>Update @Model.CompanyName</h3>
+        <div class="check_left_cont_txt">
+    <table>
+    @if (Session["UserType"] != null && Session["UserType"] != "" && Session["UserType"].ToString().Equals("1"))
+    {<tr><td>Deployment</td><td>@Html.DropDownList("ddlDeployments", Model.Deployments.Select(c => new SelectListItem { Text = c.DeploymentName, Value = c.DeploymentId.ToString(), Selected = c.DeploymentId == Model.DeploymentId }))</td></tr>
+    }
+    <tr><td>Company name *</td><td>@Html.TextBoxFor(model => model.CompanyName, (object)new { @class = "bigtextfield" })
+            @Html.ValidationMessageFor(model => model.CompanyName)
+            @Html.HiddenFor(model => model.CompanyId)</td></tr>
+    <tr><td>@Html.LabelFor(model => model.Address)</td><td>@Html.TextAreaFor(model => model.Address, new { @class = "add" })</td></tr>
+    <tr><td>Contact Number</td><td>@Html.TextBoxFor(model => model.ContactNumber, new { @class = "bigtextfield" })</td></tr></table>
+            <div style="margin-left: 120px;">
+            <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            <a href="@Url.Action("GetCompaniesList","SMSAdmin")"><input type="button"  class="btnCancel" value="Cancel" /></a>
+        </div></div></div>
+    </fieldset>
+}

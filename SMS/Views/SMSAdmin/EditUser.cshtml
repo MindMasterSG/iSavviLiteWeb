@@ -1,0 +1,94 @@
+﻿@model SMS.Models.UserViewModel
+@{Layout = "~/Views/Shared/_LayoutTransactions.cshtml";}
+<script type="text/javascript">
+    //    $(document).ready(function () {
+    //        $("#ddlUserTypes").change(function () {
+    //            $.post("/SMSAdmin/GetUsersByID/", { ID: $(this).val() }, function (data) {
+    //                populateDropdown($("#ddlUsers"), data);
+    //            });
+    //        });
+    //    });
+
+    //    function populateDropdown(select, data) {
+    //        select.html('');
+    //        $.each(data, function (id, option) {
+    //            select.append($('<option></option>').val(option.UID).html(option.UserName));
+    //        });
+    //    }
+</script>
+@*<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>*@
+@*<div class="Transactions_cont">
+    <div class="Displaying_cont_txt">
+        Edit User</div>
+</div>*@
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById('Deployments').selectedIndex == 0) {
+            alert("Please select Deployment");
+            return false;
+        }
+         if (document.getElementById("LoginID").value == "") {
+            alert('Please enter the LoginID');
+            document.getElementById("LoginID").focus();
+            return false;
+        }
+        if (document.getElementById("Password").value == "") {
+            alert('Please enter the Password');
+            document.getElementById("Password").focus();
+            return false;
+        }
+        if (document.getElementById("cnfPWD").value == "") {
+            alert('Please enter the confirm password');
+            document.getElementById("cnfPWD").focus();
+            return false;
+        }
+        if (document.getElementById("Password").value != document.getElementById("cnfPWD").value) {
+            alert('Password and confirm password should be same');
+            document.getElementById("cnfPWD").focus();
+            return false;
+        }
+        if (document.getElementById("EmailID").value != "") {
+            var x = document.forms[0]["EmailID"].value;
+            var atpos = x.indexOf("@@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+<h2>
+    Edit user</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        
+        <div class="check_main_bg_cont">
+
+        <div class="check_left_cont_txt">
+    <table>
+    @if (Session["UserType"] != null && Session["UserType"] != "" && Session["UserType"].ToString().Equals("1"))
+    {<tr><td>Deployment</td><td>@Html.DropDownList("ddlDeployements", Model.Deployements.Select(c => new SelectListItem { Text = c.DeploymentName, Value = c.DeploymentId.ToString(), Selected = c.DeploymentId == Model.DeploymentID }))</td></tr>
+    }<tr><td>Login</td><td>@Html.TextBoxFor(model => model.LoginID, (object)new { @readonly = "readonly", @class = "bigtextfield" })</td></tr>
+    <tr><td>Name</td><td>@Html.TextBoxFor(model => model.UserName, (object)new { @class = "bigtextfield" })
+            @Html.ValidationMessageFor(model => model.UserName)
+            @Html.HiddenFor(model => model.UID)</td></tr>
+    <tr><td>Email</td><td>@Html.TextBoxFor(model => model.EmailID, new { @class = "bigtextfield" })
+            @Html.ValidationMessageFor(model => model.EmailID)</td></tr>
+    <tr><td>User Type</td><td>@Html.DropDownList("ddlUserTypes", Model.UserTypes.Select(c => new SelectListItem { Text = c.UserType, Value = c.UserTypeID.ToString(), Selected = c.UserTypeID == Model.UserTypeID }))</td></tr>
+    <tr><td>Password</td><td>@Html.PasswordFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)</td></tr>
+    <tr><td>Confirm Password</td><td><input type="password" id="cnfPWD" name="cnfPWD" /></td></tr>
+    </table>
+    <div style="margin-left: 120px;">
+            <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            <a href="@Url.Action("UsersList", "SMSAdmin")">
+                <input type="button" class="btnCancel" value="Cancel" /></a>
+                </div>
+    </div>
+    </div>
+    </fieldset>
+}

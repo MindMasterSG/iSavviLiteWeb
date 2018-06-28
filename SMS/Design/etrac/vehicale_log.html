@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vehicle log</title>
+
+<link href="css/etrac.css" rel="stylesheet" type="text/css" />
+
+</head >
+
+<body >
+
+      <div class="header_part" style="width:100%;">
+  <div class="header_wrapper">
+            <div class="header_main_mt_cont">
+            
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" border="0" /></a></div>
+            
+            <div class="top_menu">Welcome :  
+                     <li><a href="gallery.html" class="footer_Highlight">Katong_guard </a></li>
+					 <li> | </li> 
+					 <li><a href="contactus.html">Logout</a></li></div>
+        </div>
+                     
+                     
+                     <div class="menu_cont">
+                     <div class="check_in_button"><a href="login.html"></a></div>
+                     <div class="vehicles_button"><a href="transactions.html"></a></div>
+                     <div class="occurrences_button"><a href="#"></a></div>
+                     <div class="incidents_button"><a href="#"></a></div>
+                     <div class="event_button"><a href="#"></a></div>
+                      <div class="lost_button"><a href="#"></a></div></div>
+                      
+                      
+                      <div class="body_main_mt_cont">
+                      <div class="vehicle_cont">
+                      <div class="vehicle_txt" style="text-transform:uppercase;">vehicle masterlist and log history <br />
+                      </div>
+                      </div></div>
+                      <div></div>
+                      
+                      <div class="Identification_cont">
+                      <div class="Identification_left_cont">
+                      <div class="contact_left_cont">
+             <form id="eform" name="eform" method="post" action="quick_contact.php" onSubmit="return formValid();">
+             <table width="551" class="subject">
+             <tbody>
+              <tr>
+             <td width="177" style="color:#FFFFFF;">Identification Union (IU) : <span id="req">*</span></td>
+             <td width="362">
+             <input  name="txtName" style="width: 330px; height:25px; margin-left:10px; background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onKeyPress="hideMsg(1)" type="text"></r></td></tr>
+              <tr>
+             <td style=" padding-top:10px; color:#FFFFFF;">Plate Number :<span id="req"> *</span></td><td><input  name="txtName3" style="width: 330px; height:25px; margin-left:10px; margin-top:10px; background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" />
+               </r></td></tr>
+              <tr>
+             <td style=" padding-top:10px; color:#FFFFFF;">Container # : <span id="req">*</span></td><td>
+             <input  name="txtName" style="width: 330px; height:25px; margin-left:10px; margin-top:10px; background-color:;  border:solid 1px #3a535e; color:  #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onKeyPress="hideMsg(1)" type="text"></r></td></tr>
+             <tr>
+             <td style=" padding-top:10px ; color:#FFFFFF;">Description :</span></td>
+             <td ><input  name="txtName2" style="width: 330px; height:25px; margin-left:10px; margin-top:10px; background-color:;  border:solid 1px #3a535e; color:  #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" />
+               </r></td>
+             </tr>
+            <tr>
+                <td style=" padding-top:10px; color:#FFFFFF;">Trailer # : </td>
+            <td style="padding-top:10px; padding-left:10px;">
+              <input name="phone" style="width: 330px; height:25px; background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px;border-radius: 4px 4px 4px 4px;" type="text" /></td>
+            </tr>
+            
+            <tr><td style=" padding-top:10px; color:#FFFFFF;"> Security Guard Name :</td>
+            <td  style="padding-top:10px; padding-left:10px;"><input name="txtEmail" style="width: 330px;height:25px;  background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" /></td></tr>
+            
+            
+            
+            <tr><td style=" padding-top:10px; color:#FFFFFF;"> Contractor :</td>
+            <td  style="padding-top:10px; padding-left:10px;"><input name="txtEmail" style="width: 330px;height:25px;  background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px; border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" /></td></tr>
+            
+            
+             <tr><td style=" padding-top:10px; color:#FFFFFF;">Length :</td>
+            <td style="text-align:left; padding-top:10px; padding-left:30px;"><input name="foo" value="1" type="radio"  style="margin-right:3px;"/>
+              <span style="margin:-10px 30px 0 0px; color:#FFFFFF;">20ft</span>
+             <input name="foo" value="1" type="radio" style="margin-right:3px;"/><span style="margin:-10px 0px 0 0px; color:#FFFFFF;">40ft</span></td></tr>
+            
+            
+             <tr><td style=" padding-top:10px; color:#FFFFFF;"> Capacity :</td>
+            <td style="text-align:left; padding-top:10px; padding-left:30px;">
+             <input name="foo" value="1" type="radio"  style="margin-right:3px;"/><span style="margin:-10px 30px 0 0; color:#FFFFFF;">Ful</span> 
+             <input name="foo" value="1" type="radio"  style="margin-right:3px;"/><span style="margin:-10px 30px 0 0; color:#FFFFFF;">Empty</span></td></tr>
+            
+             
+            
+            
+           
+            
+            
+            <tr><td style=" padding-top:5px; color:#FFFFFF;">Authorized Person's IC :</td>
+            <td  style="padding-top:10px; padding-left:10px;"><input name="txtEmail" style="width: 330px;height:25px;  background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px;border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" /></td></tr>
+            
+            
+            <tr><td style=" padding-top:10px; color:#FFFFFF;">Authorized Person Name :</td>
+            <td  style="padding-top:10px; padding-left:10px; padding-bottom:0px;"><input name="txtEmail" style="width: 330px;height:25px;  background-color:;  border:solid 1px #3a535e; color: #1a1e2a; padding-left:5px;border-radius: 4px 4px 4px 4px;" onkeypress="hideMsg(1)" type="text" /></td></tr>
+            </tbody></table>
+           </form></div></div>
+                      
+                      <div class="Identification_left_cont" style=" float:right; width:350px; margin-top:15px; margin-right:25px; ">
+                      <table class="subject">
+                      <tr>
+            <tr>
+              <td style="text-align:left; padding-top:10px; padding-bottom:10px; color:#FFFFFF;"> Capture Vehicle Image :</td>
+            </tr>
+             
+              <tr>
+                <td><textarea name="txtComment" style="width: 320px; background-color:;  border:solid 1px #3a535e; color: #FFFFFF; padding-left:5px; border-radius: 4px 4px 4px 4px;" rows="16" onkeydown="limitText(this.form.limitedtextarea,this.form.countdown,1000);" onkeyup="limitText(this.form.limitedtextarea,this.form.countdown,1000);"></textarea></td>
+              </tr>
+            <tr>
+            
+            <td style="text-align: center;">
+            <div class="feedback_submit_buttton" style="margin:10px 0 0 20px;"><input name="submit" class="submit_button" type="submit" value="Capture Image" /></div>
+            <div class="feedback_submit_buttton" style="margin:10px 0 0 40px;"><input name="submit" class="submit_button" type="submit" value="Save Image" /></div>
+            <div class="feedback_submit_buttton" style="margin:10px 0px 0 100px;"><input name="submit" class="submit_button" type="submit" value="Submit" /></div></td></tr>
+            <tr>
+            </tbody></table>
+</form></div></div></tr>
+                      
+                    <div class="bottom_line"></div>
+                      
+                      <div class="coperight_cont_txt">Copyright 2012 © SpinnetAsia Pte. Ltd.</div ></div >
+                      
+        
+
+</body>
+</html>

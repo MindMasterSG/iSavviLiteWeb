@@ -1,0 +1,65 @@
+﻿@model SMSEntities.SMSDBEntities.Vehicles
+@{
+    ViewBag.Title = "EditVehicle";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if ($("#Vehicleplate").val() == "" || $("#ddlPurposeList").val() == "" || $("#ddlVehicleTypesList").val() == "" || $("#location").val() == "") {
+            alert('Please enter the mandatory fields.');
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>
+    Edit Vehicle</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+    <div class="check_main_bg_cont">
+    <div class="check_left_cont_txt">
+        <table>
+            <input type="hidden" id="vehicleid" name="vehicleid" />
+            @*<tr><td>id: *</td><td>@Html.TextBoxFor(model => model.vehicleid, new { @id = "vehicleid", @class = "bigtextfield" })</td></tr>*@
+
+            <tr><td>Vehicle Plate #: *</td><td>@Html.TextBoxFor(model => model.platenumber, new { @id = "Vehicleplate", @class = "bigtextfield" })</td></tr>
+
+            <tr>
+                <td>Vehicle Type :*</td>
+                <td>
+                    @Html.DropDownListFor(model => Model.VehicleTypesList, new SelectList(Model.VehicleTypesList, "vehicletype", "vehicletype", Model.vehicletype), "Select", new { @id = "ddlVehicleTypesList", @class = "ddl" })
+                    @Html.ValidationMessageFor(model => model.VehicleTypesList)
+                </td>
+            </tr>
+            <tr>
+                <td>Purpose :*</td>
+                <td>
+                    @Html.DropDownListFor(model => Model.PurposeList, new SelectList(Model.PurposeList, "purpose", "purpose", Model.purpose), "Select", new { @id = "ddlPurposeList", @class = "ddl" })
+                    @Html.ValidationMessageFor(model => model.PurposeList)
+                </td>
+            </tr>
+            <tr><td>Location :*</td><td>@Html.TextBoxFor(model => model.LocationName, new { @id = "location", @class = "bigtextfield" })</td></tr>
+            @*<tr><td>Trailer #:</td><td>@Html.TextBoxFor(model => model.trailernumber, new { @class = "bigtextfield" })</td></tr>*@
+            <tr><td>Contractor:</td><td>@Html.TextBoxFor(model => model.contractor, new { @class = "bigtextfield" })</td></tr>
+            <tr><td>Security Guard Name:</td><td>@Html.TextBoxFor(model => model.securityguardname, new { @class = "bigtextfield" })</td></tr>
+            <tr><td>Authorized Person's IC:</td><td>@Html.TextBoxFor(model => model.authpersonic, new { @class = "bigtextfield" })</td></tr>
+            <tr><td>Authorized Person Name:</td><td>@Html.TextBoxFor(model => model.authpersonname, new { @class = "bigtextfield" })</td></tr>
+            <tr><td>Description:</td><td>@Html.TextBoxFor(model => model.description, new { @class = "bigtextfield" })</td></tr>
+            @*<tr><td>Length:</td><td>@Html.RadioButtonFor(model => model.length, "20")20ft @Html.RadioButtonFor(model => model.length, "40")40ft</td></tr>
+            <tr><td>Capacity:</td><td>@Html.RadioButtonFor(model => model.capacity, "Full")Full @Html.RadioButtonFor(model => model.capacity, "Empty")Empty</td></tr>*@
+        </table>
+        <div style="margin-left: 120px;">
+            <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            <a href="/SMSAdmin/GetVehicles"><input type="button"  class="btnCancel" value="Cancel" /></a>
+       </div></div></div>
+    </fieldset>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#ddlPurposeList").val('@ViewBag.purpsose');
+        $("#ddlVehicleTypesList").val('@ViewBag.vType')
+        $("#vehicleid").val('@ViewBag.vehicleid')
+    });
+</script>

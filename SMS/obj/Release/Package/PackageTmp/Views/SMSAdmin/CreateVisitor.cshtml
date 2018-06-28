@@ -1,0 +1,81 @@
+﻿@model SMS.Models.VisitorsViewModel
+@{
+    ViewBag.Title = "CreateVisitor";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById("FirstName").value == "") {
+            alert('Please enter the First Name');
+            document.getElementById("FirstName").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>
+    Create Visitor</h2>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Please correct the below errors.")
+    <fieldset><div class="check_main_bg_cont">
+        @*<legend>Create User</legend>*@
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.FirstName, new { @class = "bigtextfield" })
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MiddleName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.MiddleName, new { @class = "bigtextfield" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.LastName, new { @class = "bigtextfield" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CompanyName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.CompanyName, new { @class = "bigtextfield" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContactNumber)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.ContactNumber, new { @class = "bigtextfield" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Address, new { @class = "bigtextfield" })
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NRIC)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.NRIC, new { @class = "bigtextfield" })
+        </div>
+        @if (Session["DeploymentId"] == null)
+        {
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Deployements)
+            </div>
+            <div class="editor-field">
+                @Html.DropDownListFor(model => Model.Deployements, new SelectList(Model.Deployements, "DeploymentId", "DeploymentName", Model.DeploymentId), "--Select--")
+            </div>
+        }</div>
+        <p>
+            <input type="submit" class="btnAddUpdate" value="Add" />
+        </p>
+    </fieldset>
+}

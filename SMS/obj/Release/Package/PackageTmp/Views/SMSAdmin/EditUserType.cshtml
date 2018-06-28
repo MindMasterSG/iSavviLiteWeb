@@ -1,0 +1,58 @@
+﻿@model SMSEntities.SMSDBEntities.UserTypes
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById("UserType").value == "") {
+            alert('Please enter the User Type');
+            document.getElementById("UserType").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>Edit User Type</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Create User</legend>
+      @ViewBag.ErrorMessage
+      <div class="check_main_bg_cont">
+      <div class="check_left_cont_txt">
+        <div class="editor-label" >
+            <legend>User Type</legend>
+        </div>
+        <div class="editor-field">
+             @Html.TextBoxFor(model => model.UserType, (object)new { @readonly = "readonly" , @class = "bigtextfield" })
+             @Html.ValidationMessageFor(model => model.UserType)
+              @Html.HiddenFor(model => model.UserTypeID)
+        </div>
+        <div class="editor-label" >
+            <legend>Description</legend>
+        </div>
+        <div class="editor-field">
+             @Html.TextBoxFor(model => model.Description, new { @class = "bigtextfield" })
+             @*@Html.ValidationMessageFor(model => model.LoginID)*@
+        </div>
+        <div class="editor-label" >
+            <legend>Level</legend>
+        </div>
+        <div class="editor-field">
+             @Html.TextBoxFor(model => model.Level, new { @class = "bigtextfield" })
+             @*@Html.ValidationMessageFor(model => model.Level)*@
+        </div>
+        <div class="editor-label" >
+            <legend>Parent</legend>
+        </div>
+        <div class="editor-field">
+             @Html.TextBoxFor(model => model.Parent, new { @class = "bigtextfield" })
+             @*@Html.ValidationMessageFor(model => model.Parent)*@
+        </div>
+        </div>
+        <div style="margin-left: 120px;">
+            <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            </div>
+        </div>
+    </fieldset>
+}

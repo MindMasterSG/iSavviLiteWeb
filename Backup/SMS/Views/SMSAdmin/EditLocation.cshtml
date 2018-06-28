@@ -1,0 +1,60 @@
+﻿@model SMS.Models.LocatonViewModel
+@{
+    ViewBag.Title = "EditLocation";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById('Deployements').selectedIndex == 0) {
+            alert("Please select Deployment");
+            return false;
+        }
+        if (document.getElementById("LocationName").value == "") {
+            alert('Please enter the Location Name');
+            document.getElementById("LocationName").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>
+    Location</h2>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        Update @Model.LocationName
+        @*@if (Session["DeploymentId"] == null)
+        {*@
+        <div class="check_main_bg_cont">
+            <div class="check_left_cont_txt">
+                <table>
+                @if (Session["UserType"] != null && Session["UserType"] != "" && Session["UserType"].ToString().Equals("1"))
+                {
+                    <tr>
+                        <td>
+                            Deployment
+                        </td>
+                        <td>@Html.DropDownList("ddlDeployements", Model.Deployements.Select(c => new SelectListItem { Text = c.DeploymentName, Value = c.DeploymentId.ToString(), Selected = c.DeploymentId == Model.DeploymentId }))
+                        </td>
+                    </tr>
+                }
+                    <tr>
+                        <td>
+                            Location *
+                        </td>
+                        <td>@Html.TextBoxFor(model => model.LocationName, (object)new { @readonly = "readonly", @class = "bigtextfield" })
+                            @Html.ValidationMessageFor(model => model.LocationName)
+                            @Html.HiddenFor(model => model.LocationId)
+                        </td>
+                    </tr>
+                </table>
+                <div style="margin-left: 130px;">
+                    <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+                    <a href="@Url.Action("GetLocationsList", "SMSAdmin")">
+                        <input type="button" class="btnCancel" value="Cancel" /></a>
+                </div>
+            </div>
+    </fieldset>
+}

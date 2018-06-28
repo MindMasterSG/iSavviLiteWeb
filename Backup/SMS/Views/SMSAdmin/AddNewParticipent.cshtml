@@ -1,0 +1,41 @@
+﻿@model SMSEntities.SMSDBEntities.Visitors
+@{
+    ViewBag.Title = "AddNewParticipent";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        
+         if (document.getElementById("NRIC").value == "") {
+            alert('Please enter the NRIC');
+            document.getElementById("NRIC").focus();
+            return false;
+        }
+        if (document.getElementById("FirstName").value == "") {
+            alert('Please enter the First Name');
+            document.getElementById("FirstName").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>Add New Participent</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Please correct the below errors.")
+    <fieldset><div class="check_main_bg_cont">
+    <div class="check_left_cont_txt">
+    <table>
+    <tr><td>NRIC: *</td><td>@Html.TextBoxFor(model => model.NRIC, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>First Name: *</td><td>@Html.TextBoxFor(model => model.FirstName, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>Last Name:</td><td>@Html.TextBoxFor(model => model.LastName, new { @class = "bigtextfield" })</td></tr>
+    @*<tr><td>Deployment</td><td>@Html.DropDownListFor(model => Model.Deployements, new SelectList(Model.Deployements, "DeploymentId", "DeploymentName", Model.DeploymentId), "Select", new { @class = "ddl" })</td></tr>*@
+    </table>
+       
+        <div style="margin-left: 120px;">
+            <input type="submit" class="btnAddUpdate" value="Add" onclick="return pageValidation();" />
+        </div></div>
+        </div>
+    </fieldset>
+}

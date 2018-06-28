@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2013-02-27T10:02:10.0000000+08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\Mind Master\Desktop\isavi_lite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>03/05/2012 16:49:08</publishTime>
+    </File>
+    <File Include="bin/SMS.dll">
+      <publishTime>05/29/2018 08:04:43</publishTime>
+    </File>
+    <File Include="bin/SMSBAL.dll">
+      <publishTime>05/29/2018 08:04:42</publishTime>
+    </File>
+    <File Include="bin/SMSDAL.dll">
+      <publishTime>05/29/2018 08:04:42</publishTime>
+    </File>
+    <File Include="bin/SMSEntities.dll">
+      <publishTime>05/29/2018 08:04:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Abstractions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Routing.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="Content/css/etrac.css">
+      <publishTime>08/22/2013 12:13:54</publishTime>
+    </File>
+    <File Include="Content/css/jquery-ui.css">
+      <publishTime>03/18/2013 11:12:34</publishTime>
+    </File>
+    <File Include="Content/images/ad_list_submit_bot_010.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/botton_arow.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/capture_image_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/check_in_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/default_person.jpg">
+      <publishTime>03/22/2013 09:59:21</publishTime>
+    </File>
+    <File Include="Content/images/delete_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/edit_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/event_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/important.jpg">
+      <publishTime>03/22/2013 17:05:55</publishTime>
+    </File>
+    <File Include="Content/images/incident.jpg">
+      <publishTime>03/22/2013 01:39:43</publishTime>
+    </File>
+    <File Include="Content/images/incidents_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/login_bg.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Content/images/login_box_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/logo.jpg">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/logo.png">
+      <publishTime>12/29/2012 17:28:58</publishTime>
+    </File>
+    <File Include="Content/images/logo_login.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/lost_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/mt_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/no_1_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/no_2_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/no_3_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/no_4_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/no_50_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/no_5_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/occurrences_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/search_box.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/search_img.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/show_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/signin_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/submit_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/vehicles_button.png">
+      <publishTime>01/06/2013 12:30:36</publishTime>
+    </File>
+    <File Include="Content/images/visitor_button.png">
+      <publishTime>03/21/2013 22:08:27</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/01/2013 08:59:18</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>12/03/2012 14:45:42</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="DB/sms12042013.sql">
+      <publishTime>04/12/2013 20:08:39</publishTime>
+    </File>
+    <File Include="DB/sms15042013.sql">
+      <publishTime>04/16/2013 01:37:16</publishTime>
+    </File>
+    <File Include="Design/etrac/add_incident.html">
+      <publishTime>04/10/2013 16:14:12</publishTime>
+    </File>
+    <File Include="Design/etrac/css/etrac.css">
+      <publishTime>04/12/2013 12:59:15</publishTime>
+    </File>
+    <File Include="Design/etrac/images/adincident.jpg">
+      <publishTime>04/08/2013 14:22:40</publishTime>
+    </File>
+    <File Include="Design/etrac/images/ad_list_submit_bot_010.png">
+      <publishTime>04/08/2013 14:53:06</publishTime>
+    </File>
+    <File Include="Design/etrac/images/bg.jpg">
+      <publishTime>04/10/2013 16:06:16</publishTime>
+    </File>
+    <File Include="Design/etrac/images/bg1.jpg">
+      <publishTime>04/11/2013 17:03:40</publishTime>
+    </File>
+    <File Include="Design/etrac/images/bg2.jpg">
+      <publishTime>04/11/2013 17:05:11</publishTime>
+    </File>
+    <File Include="Design/etrac/images/botton_arow.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/capture_image_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/car.jpg">
+      <publishTime>04/08/2013 19:42:18</publishTime>
+    </File>
+    <File Include="Design/etrac/images/check_in_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/delete_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/dots.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/edit_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/event_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/fire.jpg">
+      <publishTime>04/08/2013 19:43:14</publishTime>
+    </File>
+    <File Include="Design/etrac/images/gun.jpg">
+      <publishTime>04/08/2013 19:42:46</publishTime>
+    </File>
+    <File Include="Design/etrac/images/header-bg.jpg">
+      <publishTime>03/31/2013 23:03:20</publishTime>
+    </File>
+    <File Include="Design/etrac/images/incidents_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/login_bg.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/login_box_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/logo.jpg">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/logo.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/logo_login.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/lost_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/medical.jpg">
+      <publishTime>04/08/2013 19:43:46</publishTime>
+    </File>
+    <File Include="Design/etrac/images/mis.jpg">
+      <publishTime>04/08/2013 19:44:22</publishTime>
+    </File>
+    <File Include="Design/etrac/images/mt_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/no_1_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/no_2_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/no_3_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/no_4_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/no_50_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/no_5_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/occurrences_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/police.jpg">
+      <publishTime>04/08/2013 19:45:02</publishTime>
+    </File>
+    <File Include="Design/etrac/images/search_box.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/search_img.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/seprator.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/show_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/signin_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/site-bg-pattern.gif">
+      <publishTime>04/01/2013 09:55:14</publishTime>
+    </File>
+    <File Include="Design/etrac/images/submit_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/images/vehicles_button.png">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/incident.html">
+      <publishTime>04/08/2013 23:18:52</publishTime>
+    </File>
+    <File Include="Design/etrac/index.html">
+      <publishTime>04/08/2013 02:34:20</publishTime>
+    </File>
+    <File Include="Design/etrac/login.html">
+      <publishTime>03/31/2013 08:34:30</publishTime>
+    </File>
+    <File Include="Design/etrac/masterlist.html">
+      <publishTime>04/10/2013 16:23:42</publishTime>
+    </File>
+    <File Include="Design/etrac/occurance.html">
+      <publishTime>04/12/2013 14:24:49</publishTime>
+    </File>
+    <File Include="Design/etrac/transactions.html">
+      <publishTime>04/16/2013 00:35:41</publishTime>
+    </File>
+    <File Include="Design/etrac/vehicale_chek.html">
+      <publishTime>04/08/2013 18:42:20</publishTime>
+    </File>
+    <File Include="Design/etrac/vehicale_log.html">
+      <publishTime>04/08/2013 15:46:38</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/24/2018 21:54:23</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/07/2017 02:36:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1-vsdoc.js">
+      <publishTime>12/03/2012 14:45:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1.js">
+      <publishTime>12/03/2012 14:45:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1.min.js">
+      <publishTime>12/03/2012 14:45:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>03/18/2013 11:14:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.js">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.min.js">
+      <publishTime>12/03/2012 14:45:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.js">
+      <publishTime>03/18/2013 11:15:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate-vsdoc.js">
+      <publishTime>12/03/2012 14:45:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/03/2012 14:45:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/03/2012 14:45:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.webcam.js">
+      <publishTime>03/21/2013 20:14:27</publishTime>
+    </File>
+    <File Include="Scripts/jscam.swf">
+      <publishTime>03/21/2013 21:36:11</publishTime>
+    </File>
+    <File Include="Scripts/jscam_canvas_only.swf">
+      <publishTime>03/21/2013 21:36:49</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.debug.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.debug.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.debug.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.js">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-1.7.js">
+      <publishTime>12/03/2012 14:45:44</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-1.7.min.js">
+      <publishTime>12/03/2012 14:45:44</publishTime>
+    </File>
+    <File Include="Views/Account/ChangePassword.cshtml">
+      <publishTime>03/21/2013 14:59:04</publishTime>
+    </File>
+    <File Include="Views/Account/ChangePasswordSuccess.cshtml">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Views/Account/LogOn.cshtml">
+      <publishTime>04/13/2013 22:40:35</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>03/21/2013 14:59:04</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/21/2012 14:58:56</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/30/2012 13:04:26</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutGuard.cshtml">
+      <publishTime>02/24/2013 11:08:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutTransactions.cshtml">
+      <publishTime>03/13/2018 02:10:37</publishTime>
+    </File>
+    <File Include="Views/Shared/_LogOnPartial.cshtml">
+      <publishTime>08/28/2012 02:30:00</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddClubVisitorCheckInOut.cshtml">
+      <publishTime>03/19/2018 17:50:22</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddCompany.cshtml">
+      <publishTime>06/27/2013 18:39:19</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddEventsMaster.cshtml">
+      <publishTime>03/11/2018 20:25:30</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddIncident.cshtml">
+      <publishTime>07/17/2013 20:56:33</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddKeyStatus.cshtml">
+      <publishTime>05/04/2013 20:58:17</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddLostAndFound.cshtml">
+      <publishTime>04/21/2013 11:58:37</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddNewParticipent.cshtml">
+      <publishTime>05/08/2013 21:56:03</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddOccurrence.cshtml">
+      <publishTime>06/26/2013 19:53:26</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddVehicle.cshtml">
+      <publishTime>03/11/2018 23:05:58</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddVisitorCheckInOut.cshtml">
+      <publishTime>03/13/2018 01:16:32</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/AddVisitorType.cshtml">
+      <publishTime>05/04/2013 20:59:57</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/cam.cshtml">
+      <publishTime>03/22/2013 10:38:16</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/Copy of Deployment.cshtml">
+      <publishTime>04/16/2013 00:34:09</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/Copy of GetOccurances.cshtml">
+      <publishTime>04/16/2013 00:35:41</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreateGate.cshtml">
+      <publishTime>06/27/2013 18:39:40</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreateKey.cshtml">
+      <publishTime>06/27/2013 18:37:21</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreateLocation.cshtml">
+      <publishTime>06/27/2013 18:39:32</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreatePass.cshtml">
+      <publishTime>06/27/2013 18:39:36</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreateUser.cshtml">
+      <publishTime>06/27/2013 18:39:25</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreateUserType.cshtml">
+      <publishTime>04/15/2013 16:51:01</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/CreateVisitor.cshtml">
+      <publishTime>04/15/2013 14:46:38</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/DeleteDeployment.cshtml">
+      <publishTime>06/26/2013 16:49:08</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/Deployment.cshtml">
+      <publishTime>05/27/2018 06:16:57</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/DeploymentAdd.cshtml">
+      <publishTime>03/19/2018 17:58:42</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/DeploymentEdit.cshtml">
+      <publishTime>03/19/2018 18:31:23</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditCompany.cshtml">
+      <publishTime>12/09/2017 19:07:32</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditEventsMaster.cshtml">
+      <publishTime>12/09/2017 22:20:29</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditGate.cshtml">
+      <publishTime>12/09/2017 18:42:12</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditIncident.cshtml">
+      <publishTime>05/04/2013 20:57:48</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditKey.cshtml">
+      <publishTime>12/09/2017 18:53:29</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditKeyStatus.cshtml">
+      <publishTime>05/04/2013 20:58:28</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditLocation.cshtml">
+      <publishTime>12/09/2017 18:47:31</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditLostAndFound.cshtml">
+      <publishTime>05/04/2013 21:09:21</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditNewParticipent.cshtml">
+      <publishTime>05/08/2013 21:56:18</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditOccurrence.cshtml">
+      <publishTime>04/18/2013 09:42:29</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditPass.cshtml">
+      <publishTime>12/09/2017 21:11:43</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditUser.cshtml">
+      <publishTime>12/09/2017 19:19:31</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditUserType.cshtml">
+      <publishTime>04/15/2013 16:50:17</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditVehicle.cshtml">
+      <publishTime>03/11/2018 23:31:54</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditVisitor.cshtml">
+      <publishTime>04/15/2013 14:51:30</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/EditVisitorType.cshtml">
+      <publishTime>05/04/2013 21:00:10</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GatesList.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetClubVisitorCheckInOut.cshtml">
+      <publishTime>03/13/2018 02:02:36</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetCompaniesList.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetEventsMaster.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetIncidents.cshtml">
+      <publishTime>05/28/2018 19:48:30</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetKeysList.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetKeyStatuses.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetLocationsList.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetLostAndFound.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetOccurrences.cshtml">
+      <publishTime>05/28/2018 19:51:12</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetPassesViewModel.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetVehicles.cshtml">
+      <publishTime>03/11/2018 21:50:46</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetVisitorCheckInOut.cshtml">
+      <publishTime>05/29/2018 00:14:34</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetVisitorsList.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/GetVisitorTypes.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/Home.cshtml">
+      <publishTime>01/06/2013 14:26:40</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/LoginView.cshtml">
+      <publishTime>05/26/2013 23:21:35</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/NewParticipants.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/UsersList.cshtml">
+      <publishTime>05/29/2018 01:05:16</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/UserTypesList.cshtml">
+      <publishTime>05/21/2013 11:32:59</publishTime>
+    </File>
+    <File Include="Views/SMSAdmin/VisitorsDetails.cshtml">
+      <publishTime>05/29/2018 08:04:02</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/07/2017 02:47:44</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/01/2013 01:33:29</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/29/2018 08:04:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

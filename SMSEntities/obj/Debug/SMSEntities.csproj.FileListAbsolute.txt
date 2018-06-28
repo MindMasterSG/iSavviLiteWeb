@@ -1,0 +1,81 @@
+D:\asr\code\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+D:\asr\code\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\asr\code\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+D:\asr\code\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+F:\MVCProjects\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+F:\MVCProjects\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+F:\MVCProjects\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCProjects\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+F:\MVCProjects\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+E:\MVCProjects\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+E:\MVCProjects\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+E:\MVCProjects\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+E:\MVCProjects\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+E:\MVCProjects\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS14-01-13\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS14-01-13\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS14-01-13\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\Final\SMS14-01-13\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS14-01-13\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+E:\MVCProjects\Latest\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+E:\MVCProjects\Latest\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+E:\MVCProjects\Latest\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+E:\MVCProjects\Latest\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+E:\MVCProjects\Latest\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+F:\MVCProjects\Latest\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+F:\MVCProjects\Latest\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+F:\MVCProjects\Latest\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCProjects\Latest\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+F:\MVCProjects\Latest\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\Final\SMS\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+F:\MVCProjects\SMS07-02-13\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+F:\MVCProjects\SMS07-02-13\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+F:\MVCProjects\SMS07-02-13\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCProjects\SMS07-02-13\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+F:\MVCProjects\SMS07-02-13\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\asr\code\Final\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\asr\code\Final\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+D:\asr\code\Final\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+C:\MyPro\SMS13-02-13\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+C:\MyPro\SMS13-02-13\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+C:\MyPro\SMS13-02-13\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+C:\MyPro\SMS13-02-13\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+C:\MyPro\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+C:\MyPro\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+C:\MyPro\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+C:\MyPro\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+D:\Projects\sms\latestsourcecode\SMS18-03-13\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+C:\MyPro\SMS 19-03-2013\SMSEntities\bin\Debug\SMSEntities.dll
+C:\MyPro\SMS 19-03-2013\SMSEntities\bin\Debug\SMSEntities.pdb
+C:\MyPro\SMS 19-03-2013\SMSEntities\obj\Debug\SMSEntities.dll
+C:\MyPro\SMS 19-03-2013\SMSEntities\obj\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSEntities\bin\Debug\SMSEntities.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSEntities\obj\Debug\SMSEntities.dll
+D:\Projects\sms\SMS 21-03-2013\SMS 21-03-2013\SMSEntities\obj\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+D:\Projects\sms\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+D:\Projects\sms\SMS\SMSEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\sms\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+D:\Projects\sms\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+E:\Ravi_Projects\SMS\SMSEntities\bin\Debug\SMSEntities.dll
+E:\Ravi_Projects\SMS\SMSEntities\bin\Debug\SMSEntities.pdb
+E:\Ravi_Projects\SMS\SMSEntities\obj\Debug\SMSEntities.dll
+E:\Ravi_Projects\SMS\SMSEntities\obj\Debug\SMSEntities.pdb
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSEntities\bin\Debug\SMSEntities.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSEntities\bin\Debug\SMSEntities.pdb
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSEntities\obj\Debug\SMSEntities.csprojResolveAssemblyReference.cache
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSEntities\obj\Debug\SMSEntities.dll
+E:\Ravi_Projects\iSavviLite\iSavviLite_V2\SMSEntities\obj\Debug\SMSEntities.pdb

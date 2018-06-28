@@ -1,0 +1,68 @@
+﻿@model IEnumerable<SMSEntities.SMSDBEntities.Deployement>
+@{
+    ViewBag.Title = "Deployment";
+
+    var grid = new WebGrid(source: Model,rowsPerPage:3,canPage:true);
+}
+<h2>
+    Deployment</h2>
+
+<p>
+@using (Html.BeginForm()){ <b>Search:</b><input type="text" name="txtSearchString" id="txtSearchString" /><input type="submit" class="btnAddUpdate" value="Search" />}
+    <div id="dGrid">
+        @grid.GetHtml(columns: new[] {
+                 grid.Column("DeploymentId"),
+                 grid.Column("Description"),
+                } )
+        <p>@Html.ActionLink("Add New", "AddNewDeployment")</p>
+
+        @grid.GetHtml(
+    fillEmptyRows: true,
+    alternatingRowStyle: "alternate-row",
+    headerStyle: "grid-header",
+    footerStyle: "grid-footer",
+    mode: WebGridPagerModes.All,
+    firstText: "<< First",
+    previousText: "< Prev",
+    nextText: "Next >",
+    lastText: "Last >>",
+    columns: new [] {
+        
+        
+        
+        grid.Column("DeploymentId", canSort: false),
+        grid.Column("Description"),
+       
+        grid.Column("", 
+                    header: "",
+                    format: @<text>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.DeploymentId })
+                                |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.DeploymentId })
+                            </text>
+        )
+})
+<br />
+        <table>
+            <tr>
+                <th>
+                    Sno
+                </th>
+                <th>
+                    Desc
+                </th>
+            </tr>
+            @foreach (var item in Model)
+        {
+                <tr>
+                    <td>@item.Description
+                    </td>
+                    <td>@Html.ActionLink("Edit", "Edit", new { id = item.DeploymentId })
+                    </td>
+                    <td>@Html.ActionLink("Delete", "Delete", new { id = item.DeploymentId })
+                    </td>
+                </tr>
+        }
+        </table>
+    </div>
+</p>

@@ -1,0 +1,74 @@
+﻿@model SMSEntities.SMSDBEntities.EventMaster
+@{
+    ViewBag.Title = "EditEventsMaster";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+
+<h2>Edit Events Master</h2>
+
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        alert('hi');
+        if (document.getElementById("eventname").value == "" || document.getElementById("ddlLocations").selected == 0 ||
+        document.getElementById("ddlDeployments").selected == 0 || document.getElementById("personinchargename").value == "" ||
+        document.getElementById("personinchargecontactnumber").value == "") {
+            alert('Please enter the mandatory fields.');
+            return false;
+        }
+        return true;
+    }
+
+</script>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Please correct the below errors.")
+    
+    <fieldset><div class="check_main_bg_cont">
+
+    <div class="check_left_cont_txt">
+    <table>
+    <tr><td>Start Date </td><td> <table width="100%">
+                <tr>
+                <td align="left">
+                        @Html.TextBoxFor(model => model.startdate, (object)new { @readonly = "readonly", @class = "bigtextfield" })
+                    </td>
+                </tr>
+            </table></td></tr>
+    <tr><td>End Date </td><td><table width="100%">
+                <tr>
+                    <td align="left">
+                        @Html.TextBoxFor(model => model.enddate, (object)new { @readonly = "readonly", @class = "bigtextfield" })
+                    </td>
+                </tr>
+            </table></td></tr>
+    @if (Session["UserType"] != null && Session["UserType"] != "" && Session["UserType"].ToString().Equals("1"))
+    {<tr><td>Deployment *</td><td>@Html.DropDownList("ddlDeployments", Model.DeploymentList.Select(c => new SelectListItem { Text = c.DeploymentName, Value = c.DeploymentId.ToString(), Selected = c.DeploymentId == Model.DeploymentId }))
+            @Html.ValidationMessageFor(model => model.DeploymentList)</td></tr>
+    }
+    <tr><td>Location *</td><td>@Html.DropDownList("ddlLocations", Model.LocationsList.Select(c => new SelectListItem { Text = c.LocationName, Value = c.LocationId.ToString(), Selected = c.LocationId.ToString() == Model.locationid.ToString() }), "Select", new { @class = "ddl" })</td></tr>
+    <tr><td>Guards Required</td><td>@Html.TextBoxFor(model => model.numberofguards, new { @class = "gen" })</td></tr>
+    <tr><td>Special Duty for Guard</td><td>@Html.TextBoxFor(model => model.specialdutyforguard, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>Event name *</td><td> @Html.TextBoxFor(model => model.eventname, new { @class = "bigtextfield" })
+            @Html.HiddenFor(model => model.eventid)</td></tr>
+    <tr><td>Notes</td><td>@Html.TextAreaFor(model => model.notes, new { @class = "bt" })</td></tr>
+    <tr><td>Optional Guest List NRICs separated by a new line (You can Copy and Paste from Excel)</td><td> @Html.TextAreaFor(model => model.optionalguestlist, new { @class = "add" })</td></tr>
+    </table>
+        </div></div>
+    </fieldset>
+    <fieldset><div class="check_main_bg_cont">
+    <div class="check_left_cont_txt">
+    <legend>Details of Person In-charge</legend>
+    <table><tr><td>Name of the person In-charge *</td><td>@Html.ValidationMessageFor(model => model.personinchargename)
+            @Html.TextBoxFor(model => model.personinchargename, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>NRIC</td><td>@Html.TextBoxFor(model => model.personinchargenric, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>Contact Number *</td><td>@Html.TextBoxFor(model => model.personinchargecontactnumber, new { @class = "bigtextfield" })
+            @Html.ValidationMessageFor(model => model.personinchargecontactnumber)</td></tr>
+    <tr><td>Remarks</td><td>@Html.TextAreaFor(model => model.Remarks, new { @class = "bt" })</td></tr>
+    </table>
+    <div style="margin-left: 120px;">
+             <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            <a href="@Url.Action("GetEventsMaster", "SMSAdmin")"><input type="button"  class="btnCancel" value="Cancel" /></a>
+        </div></div></div>
+    </fieldset>
+}
+

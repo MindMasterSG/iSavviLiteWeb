@@ -1,0 +1,56 @@
+﻿@model SMSEntities.SMSDBEntities.LostAndFound
+@{
+    ViewBag.Title = "EditLostAndFound";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml"; //"~/Views/Shared/_LayoutGuard.cshtml";
+}
+<link rel="stylesheet" href="@Url.Content("~/Content/css/jquery-ui.css")" />
+  <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.9.1.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-ui.js")"></script>
+<h2>Edit Lost And Found</h2>
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById("nameofperson").value == "") {
+            alert('Please enter the Name');
+            document.getElementById("nameofperson").focus();
+            return false;
+        }
+        if (document.getElementById("reporteddate").value == "") {
+            alert('Please enter the reported date');
+            document.getElementById("reporteddate").focus();
+            return false;
+        }
+        if (document.getElementById("nric").value == "") {
+            alert('Please enter the NRIC');
+            document.getElementById("nric").focus();
+            return false;
+        }
+        return true;
+    }
+    $(function () {
+        $("#reporteddate").datepicker();
+    });
+
+</script>
+@using (Html.BeginForm())
+{
+    <fieldset>
+    <div class="check_main_bg_cont">
+    <div class="check_left_cont_txt">
+    <table>
+    <tr><td>Name of Person *</td><td>@Html.TextBoxFor(model => model.nameofperson, (object)new { @readonly = "readonly", @class = "bigtextfield" })
+            @Html.HiddenFor(model => model.lostandfoundreportid)</td></tr>
+    <tr><td>NRIC *</td><td>@Html.TextBoxFor(model => model.nric, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>Date Reported *</td><td>@Html.TextBoxFor(model => model.reporteddate, new { @class = "bigtextfield" })</td></tr>
+    <tr><td>Remarks</td><td>@Html.TextAreaFor(model => model.remarks, new { @class = "bt" })</td></tr>
+    </table>
+        
+        <div style="margin-left:120px;">
+            <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            <a href="@Url.Action("GetLostAndFound", "SMSAdmin")">
+                        <input type="button" class="btnCancel" value="Cancel" /></a>
+        </div>
+        </div>
+        </div>
+    </fieldset>
+}
+

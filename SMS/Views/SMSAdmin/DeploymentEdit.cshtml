@@ -1,0 +1,63 @@
+﻿@model  SMSEntities.SMSDBEntities.Deployement
+
+@{
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById("DeploymentName").value == "" || $("#DeploymentType").val() == "") {
+            alert('Please enter the Mandatory Fields');
+            return false;
+        }
+        return true;
+    }
+</script>
+<h2>Deployment</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div class="check_main_bg_cont">
+            <div class="check_left_cont_txt">
+                Update <span style="color:Red;"> @Model.DeploymentName</span>
+                <table>
+                    <tr>
+                        <td>
+                            Deployment Type *
+                        </td>
+                        <td>
+                            <select id="DeploymentType" name="DeploymentType" class="ddl">
+                                <option value="">Select</option>
+                                <option value="Condo">Condo</option>
+                                <option value="Club">Club</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deployment Name</td>
+                        <td>
+                            @Html.TextBoxFor(model => model.DeploymentName, new { @class = "bigtextfield" })
+                        @Html.ValidationMessageFor(model => model.DeploymentName)
+                        @Html.HiddenFor(model => model.DeploymentId)
+                    </td>
+                </tr>
+                <tr><td>Client Name</td><td> @Html.TextBoxFor(model => model.ClientName, new { @class = "bigtextfield" })</td></tr>
+                <tr><td>@Html.LabelFor(model => model.Address)</td><td>@Html.TextAreaFor(model => model.Address, new { @class = "add" })</td></tr>
+            </table>
+            <div style="margin-left: 120px;">
+                <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+                <a href="@Url.Action("Deployment", "SMSAdmin")"><input type="button" class="btnCancel" value="Cancel" /></a>
+            </div>
+        </div>
+    </div>
+</fieldset>
+}
+<script>
+    $(document).ready(function () {
+        $("#DeploymentType").val('@ViewBag.deploymentType');
+    });
+</script>

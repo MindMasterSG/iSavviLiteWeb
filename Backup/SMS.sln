@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS", "SMS\SMS.csproj", "{E763F682-B89E-4E55-B8E9-77C33E8CF254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSDAL", "SMSDAL\SMSDAL.csproj", "{ED5FA051-EC4A-43DB-A8C6-A9D3C08C6E6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSEntities", "SMSEntities\SMSEntities.csproj", "{0037404D-7BDA-4A1E-B981-C128526D9A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSBAL", "SMSBAL\SMSBAL.csproj", "{91F020D1-E171-406C-A482-7F9B602F8DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E763F682-B89E-4E55-B8E9-77C33E8CF254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E763F682-B89E-4E55-B8E9-77C33E8CF254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E763F682-B89E-4E55-B8E9-77C33E8CF254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E763F682-B89E-4E55-B8E9-77C33E8CF254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5FA051-EC4A-43DB-A8C6-A9D3C08C6E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5FA051-EC4A-43DB-A8C6-A9D3C08C6E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5FA051-EC4A-43DB-A8C6-A9D3C08C6E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5FA051-EC4A-43DB-A8C6-A9D3C08C6E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0037404D-7BDA-4A1E-B981-C128526D9A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0037404D-7BDA-4A1E-B981-C128526D9A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0037404D-7BDA-4A1E-B981-C128526D9A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0037404D-7BDA-4A1E-B981-C128526D9A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F020D1-E171-406C-A482-7F9B602F8DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F020D1-E171-406C-A482-7F9B602F8DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F020D1-E171-406C-A482-7F9B602F8DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F020D1-E171-406C-A482-7F9B602F8DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

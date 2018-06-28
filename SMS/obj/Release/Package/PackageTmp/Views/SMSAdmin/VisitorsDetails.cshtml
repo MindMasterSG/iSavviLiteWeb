@@ -1,0 +1,282 @@
+﻿
+@{
+    ViewBag.Title = "ViewVisitorCheckInOut";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="@Url.Content("~/Content/css/etrac.css")" rel="stylesheet" type="text/css" />
+
+<h2>
+    Detailed Visitor Check-In / Check-Out
+</h2>
+<a href="#" data-toggle="modal" data-target="#myModal" id="incPhoto"> View NRIC Scan</a>
+<h4>@Html.Raw(ViewBag.ErrorMessage)</h4>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        var JSONData = $("#hdnVisitors").val();
+
+        var data = typeof JSONData != 'object' ? JSON.parse(JSONData) : JSONData;
+        if (data[0].visitorid != undefined) {
+            console.log(data);
+            $("#nric").val(data[0].nricid);
+            $("#name").val(data[0].name);
+            $("#tel").val(data[0].telno);
+            $("#address").val(data[0].address);
+            $("#visitingcompany").val(data[0].fromcompany);
+            $("#purpose").val(data[0].purpose);
+
+            $("#vehicle").val(data[0].vehicleplatenumber);
+            $("#visitorStatus").val('@ViewBag.VisitorType');
+            $("#Pass").val('@ViewBag.pass');
+            $("#key").val('@ViewBag.key');
+            $("#gate").val('@ViewBag.gate');
+            $("#Remarks").val(data[0].remarks);
+
+            $("#blockdays").val(data[0].BlockDays);
+            $("#blockType").val(data[0].BlockType);
+            $("#blockedDate").val(data[0].strBlockedDate);
+            $("#unblockedDate").val(data[0].strUnblockedDate);
+            $("#blockRemark").val(data[0].BlockRemarks);
+        }
+    });
+    $(document).ready(function () {
+        var JSONData = $("#hdnVisitors").val();
+        $("#incPhoto").hide();
+        var data = typeof JSONData != 'object' ? JSON.parse(JSONData) : JSONData;
+        if (data[0].visitorid != undefined) {
+            var s = new Array();
+            s[s.length] = "<table>"
+            if (data[0].NRICFront != null && data[0].NRICFront != "") {
+                var eachPhoto = "<img  width='540' style='padding:5px;' height='340' src=" + data[0].NRICFront + ">";
+                s[s.length] = "<tr><td>" + eachPhoto + "</td></tr>";
+                $("#incPhoto").show();
+            }
+            if (data[0].NRICBack != null && data[0].NRICBack != "") {
+                var eachPhoto = "<img  width='540' style='padding:5px;' height='340' src=" + data[0].NRICBack + ">";
+                s[s.length] = "<tr><td>" + eachPhoto + "</td></tr>";
+                $("#incPhoto").show();
+            }
+            s[s.length] = "</table>"
+            $("#PhotoSection").html(s.join(""));
+            console.log(data);
+        }
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Please correct the below errors.")
+    <fieldset>
+        @ViewBag.ErrorMessage
+        <div class="check_main_bg_cont">
+            <div class="check_left_cont_txt">
+                <input type="hidden" id="hdnVisitors" value="@ViewBag.Visitors" />
+                <table>
+
+                    <tr>
+                        <td class="tdleftcol">
+                            NRIC / ID
+                        </td>
+                        <td class="tdrightcol">
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <input type="text" id="nric" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                    <td class="tdleftcol">
+                                        Vehicle (Plate #)
+                                    </td>
+                                    <td class="tdleftcol">
+                                        <input type="text" id="vehicle" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleftcol">
+                            Name
+                        </td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <input type="text" id="name" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                    <td class="tdleftcol">
+                                        Pass
+                                    </td>
+                                    <td class="tdleftcol">
+                                        <input type="text" id="Pass" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleftcol">
+                            Tel. No.
+                        </td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <input type="text" id="tel" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                    <td class="tdleftcol">
+                                        Gate
+                                    </td>
+                                    <td class="tdleftcol">
+                                        <input type="text" id="gate" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleftcol">
+                            Purpose
+                        </td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <input type="text" id="purpose" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                    <td class="tdleftcol">
+                                        Visitor Status
+                                    </td>
+                                    <td class="tdleftcol">
+                                        <input type="text" id="visitorStatus" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleftcol">
+                            Visiting Company/BLK
+                        </td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <input type="text" id="visitingcompany" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                    <td class="tdleftcol">
+                                        Key(s)
+                                    </td>
+                                    <td class="tdleftcol">
+                                        <input type="text" id="key" style="margin-top:8px;color:black;" disabled />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleftcol">
+                            Address
+                        </td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <textarea id="address" style="margin-top:8px;color:black;" disabled></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleftcol">
+                            Remarks
+                        </td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="tdrightcol" colspan="3">
+                                        <textarea id="Remarks" style="margin-top:8px;color:black;" disabled></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    @if (@ViewBag.IsBlockGuest == "true")
+                    {
+                        <tr>
+                            <td class="tdleftcol">
+                                Block Days
+                            </td>
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <td class="tdrightcol" colspan="3">
+                                            <input type="text" id="blockdays" style="margin-top:8px;color:black;" disabled />
+                                        </td>
+                                        <td class="tdleftcol">
+                                            Block Type
+                                        </td>
+                                        <td class="tdleftcol">
+                                            <input type="text" id="blockType" style="margin-top:8px;color:black;" disabled />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdleftcol">
+                                Blocked date
+                            </td>
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <td class="tdrightcol" colspan="3">
+                                            <input type="text" id="blockedDate" style="margin-top:8px;color:black;" disabled />
+                                        </td>
+                                        <td class="tdleftcol">
+                                            unBlock Date
+                                        </td>
+                                        <td class="tdleftcol">
+                                            <input type="text" id="unblockedDate" style="margin-top:8px;color:black;" disabled />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdleftcol">
+                                Block Remark
+                            </td>
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <td class="tdrightcol" colspan="3">
+                                            <textarea id="blockRemark" style="margin-top:8px;color:black;" disabled></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+
+    </fieldset>
+}
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">NRIC Scan</h4>
+            </div>
+            <div class="modal-body" id="PhotoSection">
+            </div>
+        </div>
+
+    </div>
+</div>

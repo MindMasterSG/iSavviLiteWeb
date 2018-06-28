@@ -1,0 +1,103 @@
+﻿@model IEnumerable<SMS.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Users List";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 20, canPage: true);    
+    }
+    <script language="javascript" type="text/javascript">
+        function getConfirm() {
+            if (window.confirm('Are you sure!, you want to delete?'))
+                return true;
+            else
+                return false;
+        }
+        function frmSubmit() {
+            document.forms[0].submit();
+        }
+</script>
+<div class="Transactions_cont">
+  <div class="Displaying_cont_txt" >Users</div>
+   @using (Html.BeginForm())
+  { 
+   <div class="transactions_right_cont">
+                        <div class="search_txt">
+                            search:
+                        </div>
+                        <div class="wat_box">
+                            <input name="txtSearchString" id="txtSearchString" type="text" class="wat_box_input" onfocus="if(this.value == '') this.value = ''"
+                                onblur="if(this.value == '') this.value = ' '" value=" " /></div>
+                        <div class="search_img" onclick="frmSubmit();">
+                        </div>
+                    </div>
+  }
+</div>
+    <p>@Html.ActionLink("Add new user", "CreateUser")</p>
+
+@grid.GetHtml(
+    fillEmptyRows: true,
+         alternatingRowStyle: "transactions_bg_cont_2",
+              headerStyle: "transactions_bg_cont",
+              rowStyle: "transactions_bg_cont",
+         footerStyle: "total_right_cont_txt",
+    mode: WebGridPagerModes.All,
+    //firstText: "<< First",
+    //previousText: "< Prev",
+    //nextText: "Next >",
+    //lastText: "Last >>",
+    numericLinksCount: 5,
+    firstText: "<<",
+    lastText: ">>",
+    columns: new [] {
+        
+        grid.Column("DeploymentName", "Deployment", canSort: true, style:"normaltext"),
+        grid.Column("LoginID","Login", canSort: true, style: "normaltext"),
+        grid.Column("UserName","Name", canSort: true, style: "normaltext"),
+        grid.Column("EmailID","Email", canSort: true, style: "normaltext"),
+        grid.Column("UserType","User type", canSort: true, style: "normaltext"),
+        grid.Column("", 
+                    header: "",
+                    format: @<text>
+                                @Html.ActionLink("Edit", "EditUser", new { id = item.UID })
+                                |
+                                @Html.ActionLink("Delete", "RemoveUser", new { id = item.UID }, new { onclick = "return getConfirm();" })
+                            </text>
+        )
+})
+<div class="total_main_bg_cont">
+             <div class="total_left_cont_txt">Total Users found:<strong> @grid.TotalRowCount.ToString()</strong></div>
+             </div>
+
+
+
+
+@*@using (Html.BeginForm()){ <b>Search:</b><input type="text" name="txtSearchString" id="txtSearchString" /><input type="submit" class="btnAddUpdate" value="Search" />}
+    <div id="dGrid">
+        <p>@Html.ActionLink("Add New User", "CreateUser")</p>
+
+        @grid.GetHtml(
+    fillEmptyRows: true,
+    alternatingRowStyle: "alternate-row",
+    headerStyle: "grid-header",
+    footerStyle: "grid-footer",
+    mode: WebGridPagerModes.All,
+    firstText: "<< First",
+    previousText: "< Prev",
+    nextText: "Next >",
+    lastText: "Last >>",
+    columns: new [] {
+        
+        
+        grid.Column("UID"),
+        grid.Column("UserName", canSort: false),
+        grid.Column("EmailID"),
+       
+        grid.Column("", 
+                    header: "",
+                    format: @<text>
+                                @Html.ActionLink("Edit", "EditUser", new { ID = item.UID })
+                                |
+                                @Html.ActionLink("Delete", "DeleteUser", new { ID = item.UID })
+                            </text>
+        )
+})*@

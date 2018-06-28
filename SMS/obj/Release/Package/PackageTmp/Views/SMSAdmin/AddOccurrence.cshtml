@@ -1,0 +1,47 @@
+﻿@model SMSEntities.SMSDBEntities.Occurrance
+@{
+    ViewBag.Title = "AddOccurrence";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+@*<link rel="stylesheet" href="@Url.Content("~/Content/css/jquery-ui.css")" />
+  <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.9.1.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-ui.js")"></script>*@
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById("nameofperson").value == "") {
+            alert('Please enter the Name');
+            document.getElementById("nameofperson").focus();
+            return false;
+        }
+        if (document.getElementById("nric").value == "") {
+            alert('Please enter the NRIC');
+            document.getElementById("nric").focus();
+            return false;
+        }
+        return true;
+    }
+    $(function () {
+        $("#reportdate").datepicker();
+    });
+</script>
+<h2>
+    Add Occurrence</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Please correct the below errors.")
+    <fieldset>
+        <div class="check_main_bg_cont">
+        <div class="check_left_cont_txt">
+        <table>
+        <tr><td>Date of Occurrance :</td><td>@Html.TextBoxFor(model => model.reportdate, (object)new { @readonly = "readonly", @class = "bigtextfield" })</td></tr>
+        <tr><td>Heading *</td><td>@Html.TextBoxFor(model => model.heading, new { @class = "bigtextfield" })</td></tr>
+        <tr><td>Important? </td><td style="padding-left:10px;">@Html.CheckBoxFor(model => model.important)</td></tr>
+        <tr><td>Occurance</td><td>@Html.TextAreaFor(model => model.notes, new { @class = "bt" })</td></tr>
+        </table>
+        <div style="margin-left: 120px;">
+                    <input type="submit" class="btnAddUpdate" value="Add" onclick="return pageValidation();" />
+                </div>
+        </div>
+        </div>
+    </fieldset>
+}

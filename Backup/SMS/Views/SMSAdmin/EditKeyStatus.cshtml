@@ -1,0 +1,33 @@
+﻿@model SMSEntities.SMSDBEntities.KeyStatuses
+@{
+    ViewBag.Title = "EditKeyStatus";
+    Layout = "~/Views/Shared/_LayoutTransactions.cshtml";
+}
+<script language="javascript" type="text/javascript">
+    function pageValidation() {
+        if (document.getElementById("StatusType").value == "") {
+            alert('Please enter the Status Type');
+            document.getElementById("StatusType").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<h3>Edit Key Status</h3>
+
+@using (Html.BeginForm())
+{
+    
+    <fieldset>
+    <div class="check_main_bg_cont">
+    <div class="check_left_cont_txt">
+    <table><tr><td>Key status</td><td> @Html.TextBoxFor(model => model.StatusType, (object)new {  @class = "bigtextfield" })
+            @Html.HiddenFor(Model=> Model.StatusID)</td></tr>
+    </table>
+        <div style="margin-left: 120px;">
+            <input type="submit" class="btnAddUpdate" value="Update" onclick="return pageValidation();" />
+            <a href="@Url.Action("GetKeyStatuses", "SMSAdmin")"><input type="button"  class="btnCancel" value="Cancel" /></a>
+        </div>
+        </div></div>
+    </fieldset>
+}
